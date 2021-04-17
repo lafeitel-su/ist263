@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name= "viewport" content="width=device-width, initial-scale=1.0">
+        <title>Unit 9 Notes Responsive Design</title>
+        <style>
+            body {font-family: Arial, Helvetica, sans-serif;}
+            .row1 { 
+                padding: 80px;
+                margin-top: 40px;}
+            .row1 div {
+                padding: 40px;
+            }
+            .banner{width:100%;}
+        /*any image wirj 100% will fill the whole screen*/ 
+            .bannersamll{max-width:100%;}
+        /* this says size it 100% of images size or smaller */
+        .rowl{
+            display:flex;
+            flex-wrap: wrap;
+        }
+        .box1, .box2, .box3 {flex: 1;}
+
+        /* flex-warp says your boxes can dispaly on separte row if theres not enough space*/ 
+        @media only screen and (max-width: 600px){
+            body{backgroun-color:blue;}
+
+            body {background-color:orange;}
+            .sidebar{display:none;}
+
+         /* display none takes something off the page */
+            
+        }
+        
+        /*600 px is called a breakpoint*/
+        /* media quaries have special styles for certain screen sizes*/
+
+    
+        .maincontent {width:70%; float left;}
+    .sidebar{width:20%;float:right; border: 1px solid orange;}
+   
+   </style>
+    </head>
+    <body>
+
+        <h1>Flexbox</h1>
+        <div class = "box1"> 
+
+
+        <!-- large width banner image -->
+        <img src="https://laferger.github.io/ist263/images/forever_orange.jpg" alt="large campus banner" class="banner">
+
+        <!-- smaller width banner image -->
+        <img src="https://laferger.github.io/ist263/images/forever_orange_small.jpg" alt="small campus banner" class="bannersmall">
+        
+        <!-- this row is coming from https://www.syracuse.edu/about/ -->
+        <div class="row1">
+            <div class="box1">
+                <img src="https://laferger.github.io/ist263/images/eighty-percent-numeral-800x533.png" alt="80 percent"><br>
+                <p>80% of Syracuse University students received some form of financial support totaling more than $414 million (2019-2020 data)</p>
+            </div>
+            <div class="box2">
+                <img src="https://laferger.github.io/ist263/images/eighty-seven-percent-800x533.png" alt="80 percent">
+                <p>87% placement outcome (Graduates in full-and part-time positions, military service, volunteer or service programs, and graduate school.)</p>
+            </div>
+            <div class="box3">
+                <img src="https://laferger.github.io/ist263/images/ninety-percent-800x533.png" alt="80 percent">
+                <p>Positions related to Career Goals</p>
+            </div>
+         </div>
+    </div>
+    <div>
+        <aside>
+            <h2> What does Tution Cost? </h2>
+            <p>But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness. No one rejects, dislikes, or avoids pleasure itself, because it is pleasure, but because those who do not know how to pursue pleasure rationally encounter consequences that are extremely painful. </p>
+        </h2>
+        </aside>
+
+    </body>
+</html>

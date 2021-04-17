@@ -1,0 +1,23 @@
+h1{
+    color: #
+hex colro requires the pound sign 
+/* sixs digits starting with red, then green then blue 
+
+} 
+a: link {
+    color:#00ff00;
+} 
+a:visited {
+    color: #0000ff;
+}
+a:hover {
+    color: #8000FF;
+}
+
+.lookdiffernt:hover {color: #9999999;}
+/* above uses an class selctor with the psuedo states 
+
+body {
+    background color: 
+}
+/* background color for entire page*/
