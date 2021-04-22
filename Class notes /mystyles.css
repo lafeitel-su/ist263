@@ -1,10 +1,11 @@
 h1{
     color: #
-hex colro requires the pound sign 
-/* sixs digits starting with red, then green then blue 
+/*hex colro requires the pound sign */
+/* sixs digits starting with red, then green then blue*/
+
 
 } 
-a: link {
+a:link {
     color:#00ff00;
 } 
 a:visited {
@@ -14,10 +15,25 @@ a:hover {
     color: #8000FF;
 }
 
-.lookdiffernt:hover {color: #9999999;}
-/* above uses an class selctor with the psuedo states 
+.lookdiffernt:hover {color: #999999;}
+/* above uses an class selctor with the psuedo states*/
+
 
 body {
-    background color: 
+    background-image: url(images/LT-Logo.png);
+    background-size: 100%; 
+    background-color: #c9c9ab;
 }
 /* background color for entire page*/
+
+p{
+    width: 400px;
+    background-color: #ffffffff;
+    padding: 20 px;
+/*space between content and edge of box*/
+margin: 50 px; 
+/* this is a combo value ^^ */
+/* width of your box is content width plus border width x2 
+plus margin width x2, plus padding width x2 */ 
+
+}

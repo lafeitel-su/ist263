@@ -5,6 +5,44 @@
 <head> 
 <meta charset="utf-8">
 <title> Unit 10 Accessibility </title>
+
+<style>
+    #skipbutton {
+        position: absolute;
+        /* position based on top left of viewport*/ 
+        left: -999px;
+        /*mean th element is off screen*/
+        background-color: white;
+        border: 1px solid black;
+
+    }
+
+    /* whne th eitem is tab to */
+    #skipbutton: focus 
+</style>
+
 </head>
 <body>
-<h1>
+
+    <h1> Unit 10 Notes</h1>
+    <!--headings should be hierachacaL AND ONLY 1 H1 -->
+
+<img scr= "../images/laferger" width="30" alt= "linkedin logo"
+
+
+
+<!--nothing inside alt quotes means screen reader skips-->
+    <!--don't say image of or picture of ect...-->
+
+<a id= "skipbutton" href= "#maincontent"
+
+    <a href = "#maincontent">Skip to Content</a>
+    <!--anchor link - links lower on page-->
+
+    <a href= "http:\\www.google.com" tabindex= "2"></a>
+    <a href= "http:\\www.amazon.com" tabindex= "3"></a>
+    <a href= "https:\\www.ebay.com" tabindex="4"></a>
+    <!--changes the order of item when you press tab-->
+
+</body>
+</html>
