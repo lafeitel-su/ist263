@@ -2,16 +2,20 @@
 <head>
     <meta charset="utf-8">
     <title>Lab11</title>
+    <body onload="ShuffleShells();"></body>
 
 <script>
     function WinnerMessage(){
-alert('You won!');
+        document.getElementById("messages").innerHTML = 'You Won!;'
 /* the () is argument and WinnerMessage is the name*/
 /* alert is code*/
     }
     function TryAgian(){
-        after('Wrong Shell- Try Again')
+        document.getElemnetById("messages"). innerHTML = 'Wrong Shell- Try Again';
 /*: You can put lots of functions inside one script element.  There's no limit*/
+    }
+    function ShuffleShells(){
+        document.getElementById ("first").style.order = Math.floor((Math.random()*3)+2);   
     }
 </script>
 
@@ -22,9 +26,22 @@ alert('You won!');
 <img src= "../images/walnut.jpg" alt= "third walnut" onclick="TryAgain();">
 
 <div id= "messages"></div>
-    function
+
 
 </head>
+<div class= "container">
+<img src="https://laferger.github.io/ist263/images/walnut.jpg" id="first" alt="first walnut" onclick="WinnerMessage();">
+<img src="https://laferger.github.io/ist263/images/walnut.jpg" id= "second" alt= "second walnut" onclick="TryAgin();">
+</div>
+
+<style>
+    .container{
+        display:flex;
+    }
+    #first {order:1;}
+    #second {order:2:}
+    #third {order:3:}
+</style>
 
 
 

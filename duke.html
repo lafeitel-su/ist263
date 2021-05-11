@@ -4,9 +4,20 @@
         <title>Unit 13 - Duke Layout</title>
         <style>
             body {font-family: "Open Sans",Roboto,"Helvetica Neue",Helvetica,sans-serif;}
+            .maianflexbox {display:flex;} /* that puts children into colums*/
+            /* vv this will style main1 as 1/3 of thr page and main2 as 2/3 of the page */ 
+            .main1 {flex:1;}
+            .main2 {flex:2;}
+            .imagesflexbox div{flex:1;} /* descendant selector says all div children of .imagesflexbox gets this property*/
+            img {max-width:100%;}
+        
         </style>
     </head>
     <body>
+        <div class="mainflexbox">
+            <div class= "main1"> Lorem ipsum</div>
+            <div class= "main2">Loreum ipsum 2</div>
+        </div>
         <h2>Up Next</h2>
 
         <p>Effective March 10, 2020, all Duke-sponsored events over 50 people have been cancelled, rescheduled, postponed or virtualized. Please check with the event sponsor regarding event status.</p>
@@ -35,8 +46,15 @@
 
         <h2>Resources</h2>
 
+        <div class= "mainflexbox">
+            <div> <img src="https://duke.edu/assets/img/resized/student-assistance.jpg" alt="Duke Allen Building"></div>
+            <div></div>
+            <div></div>
+        </div>
+
+
         Duke Student Assistance Fund<br>
-        <img src="https://duke.edu/assets/img/resized/student-assistance.jpg" alt="Duke Allen Building">
+       
 
         Duke Scholarship and Engagement on COVID-19<br>
         <img src="https://duke.edu/assets/img/resized/scholarship.jpg" alt="Dr. Barton Haynes">
